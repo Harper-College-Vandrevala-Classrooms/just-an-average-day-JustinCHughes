@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.csc.TestCalculator" tests="9" skipped="0" failures="0" errors="0" timestamp="2024-11-28T02:03:59" hostname="DESKTOP-BA9STQJ" time="0.025">
+  <properties/>
+  <testcase name="testForAverage()" classname="com.csc.TestCalculator" time="0.013"/>
+  <testcase name="testStreamMax()" classname="com.csc.TestCalculator" time="0.001"/>
+  <testcase name="testStreamMin()" classname="com.csc.TestCalculator" time="0.001"/>
+  <testcase name="testStreamSum()" classname="com.csc.TestCalculator" time="0.001"/>
+  <testcase name="testForMax()" classname="com.csc.TestCalculator" time="0.0"/>
+  <testcase name="testForMin()" classname="com.csc.TestCalculator" time="0.001"/>
+  <testcase name="testForSum()" classname="com.csc.TestCalculator" time="0.001"/>
+  <testcase name="testStreamAverage()" classname="com.csc.TestCalculator" time="0.003"/>
+  <testcase name="itWorks()" classname="com.csc.TestCalculator" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
