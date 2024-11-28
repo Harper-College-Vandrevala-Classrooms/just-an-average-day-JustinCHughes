@@ -62,6 +62,19 @@ public class Calculator {
     System.out.println("nums2 streamAverage: " + streamAverage(nums3));
     System.out.println("nums2 streamMax: " + streamMax(nums3));
     System.out.println("nums2 streamMin: " + streamMin(nums3) + "\n");
+
+    // Extra Credit
+    // Add 5
+    System.out.println("Add 5: " + Arrays.toString(addFive(nums)));
+
+    // Squares
+    System.out.println("Square: " + Arrays.toString(square(nums)));
+
+    // Evens
+    System.out.println("Evens: " + Arrays.toString(evens(nums)));
+
+    // Odds
+    System.out.println("Odds: " + Arrays.toString(odds(nums)));
   }
 
   public static Integer forSum(int[] nums)
@@ -158,5 +171,41 @@ public class Calculator {
                     .min();
     Integer answer = (min.isEmpty()) ? null : min.getAsInt();
     return answer;
+  }
+
+  public static int[] addFive(int[] nums)
+  {
+    nums = Arrays.stream(nums)
+                  .map(num -> num + 5)
+                  .toArray();
+
+    return nums;
+  }
+
+  public static int[] square(int[] nums)
+  {
+    nums = Arrays.stream(nums)
+                  .map(num -> num * num)
+                  .toArray();
+    
+    return nums;
+  }
+
+  public static int[] evens(int[] nums)
+  {
+    nums = Arrays.stream(nums)
+                  .filter(num -> num % 2 == 0)
+                  .toArray();
+    
+    return nums;
+  }
+
+  public static int[] odds(int[] nums)
+  {
+    nums = Arrays.stream(nums)
+                  .filter(num -> num % 2 == 1)
+                  .toArray();
+    
+    return nums;
   }
 }
